@@ -203,10 +203,18 @@ input{
     #thanks{
         zoom:normal;
         align-self: center;
+        gap:20px;
     }
     #thanks div{
         padding:20px;
         align-self: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:70%;
+    }
+    #thanks div img{
+        width:50px;
     }
     #thanks h1{
         font-size: 25px;
