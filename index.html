@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="container">
+    <div id="wrapper1">
+  <h1>Stay updated!</h1>
+
+  <p>Join 60,000+ product managers receiving monthly updates on:</p>
+  <div id="sections">
+  <section>
+    <img src="icon-list.svg" alt="check mark">
+  Product discovery and building what matters</section>
+  <section>
+    <img src="icon-list.svg" alt="check mark">
+  Measuring to ensure updates are a success</section>
+  <section>
+    <img src="icon-list.svg" alt="check mark">
+  And much more!</section></div>
+  <div id="email">
+  <div id="email-with-validation">
+  <label>Email address</label><label id="error">Valid email required</label></div>
+  <input type="text" name="email" placeholder="email@company.com" id="emailid" required>
+
+  <button onclick="thanks()" id="subscribe">Subscribe to monthly newsletter</button>
+  </div></div>
+    <div id="wrapper2">
+      <picture>
+        <source srcset="illustration-sign-up-mobile.svg" media="(max-width:540px)">
+      <img id="main-img" src="illustration-sign-up-desktop.svg" alt="Desktop illustration sign-up">
+      </picture>
+    </div>
+</main>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+<div id="thanks">
+  <div>
+  <img src="icon-success.svg" alt="success">
+ <h1>Thanks for subscribing!</h1>
+
+ <p>A confirmation email has been sent to <span id="link">ash@loremcompany.com</span>. 
+  Please open it and click the button inside to confirm your subscription.</p>
+  <button id="dismiss" onclick="dismiss()">Dismiss message</button>
+</div></div>
+  <!-- Success message end --> 
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.--> 
+    <script src="script.js"></script>
+  </div> 
+</body>
+</html>

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Roboto,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(235, 18%, 26%);
+    height:100svh;
+    width: 100swh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width:860px;
+    height:auto;
+    border-radius: 5%;
+    background-color:  hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-img{
+    width:98%;
+    height:91%;
+    object-fit: contain;
+    position: relative;
+    top:28px;
+}
+#wrapper1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 60px;
+    font-weight: 400;
+}
+#wrapper1 h1,#thanks h1{
+    font-size:50px;
+    color:hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+#wrapper1 p,#thanks p{
+    color:hsl(234, 29%, 20%);
+    font-size: 14px;
+}
+#wrapper1 p{
+    width:90%;
+}
+#sections{
+    color:hsl(234, 29%, 20%);
+    font-size: 14px;
+    font-weight: 400;
+}
+#sections{
+    display:flex;
+    gap:10px;
+    flex-direction: column;
+}
+#wrapper1 div section{
+    align-self:flex-start;
+    width:auto;
+    display: flex;
+    align-items: center;
+}
+#wrapper1 section img{
+    padding-right: 15px;
+}
+label{
+    padding-top:20px;
+    align-self: flex-start;
+    font-size:12px;
+    font-weight: 700;
+    color:hsl(234, 29%, 20%)
+}
+input,#subscribe,#dismiss{
+    padding:18px;
+    width:88%;
+    border:1px solid hsl(231, 7%, 60%);
+    border-radius:5px;
+    margin-top:20px;
+
+}
+input{
+    margin-top:10px;
+}
+#subscribe,#dismiss{
+    background-color: hsl(234, 29%, 20%);
+    color:white;
+    font-weight: 700;
+    padding-left:10px;
+}
+#subscribe:hover{
+    background-image: linear-gradient(to right, #ff6257 60%, #EF8F43);
+    box-shadow: 1px 1px 10px #ff6257;
+    cursor:pointer;
+}
+#email-with-validation{
+    display:flex;
+    justify-content: space-between;
+}
+#error{
+    padding-right:50px;
+    color:red;
+    visibility:hidden;
+}
+
+
+
+#thanks{
+    width:500px;
+    height:500px;
+    background-color: white;
+    border-radius: 40px;
+    display:none;
+}
+#link{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+#thanks div h1,#dismiss,#thanks div p{
+    padding-left:0;
+    margin-left:0;
+    padding-top:15px;
+}
+#thanks div p{
+    line-height: 20px;
+}
+#dismiss{
+    width:100%;
+    border-radius: 10px;
+}
+#thanks div{
+    padding:70px;
+}
+@media only screen and (max-width:770px){
+    #container{
+        zoom:70%;
+    }
+    #thanks{
+        zoom:70%;
+    }
+}
+@media only screen and (max-width:540px){
+    body{
+        background-color: white;
+    }
+    #container{
+        display:flex;
+        flex-direction: column-reverse;
+        min-height:100svh;
+        min-width:100swh;
+        padding:0;
+        border-radius: 0;
+        align-self: flex-start;
+        justify-content: flex-end;
+        zoom:normal;
+    }
+    #wrapper1{
+        align-items: center;
+        padding:20px;
+    }
+    #wrapper1 h1{
+        font-size:25px;
+        align-self: flex-start;
+    }
+    #email{
+        padding:0;
+    }
+    #subscribe{
+        width:100%;
+    }
+    #subscribe:hover{
+        background-image: none;
+    }
+    #subscribe:active{
+        background-image: linear-gradient(to right, #ff6257 60%, #EF8F43);
+        box-shadow: 1px 1px 10px #ff6257;
+        cursor:pointer; 
+    }
+    input{
+        width:100%;
+    }
+    #main-img{
+        top:0;
+        height:100%;
+        width:100%;
+    }
+    #wrapper1 p{
+        padding:0;
+        align-self: flex-start;
+        width:100%;
+    }
+    #error{
+        padding-right:0;
+    }
+    #sections{
+        align-self: flex-start;
+    }
+    #thanks{
+        zoom:normal;
+        align-self: center;
+    }
+    #thanks div{
+        padding:20px;
+        align-self: center;
+    }
+    #thanks h1{
+        font-size: 25px;
+    }
+}
